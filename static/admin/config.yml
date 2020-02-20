@@ -16,3 +16,13 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'menu'
+    label: 'menu'
+    folder: 'content/menu'
+    create: true
+    slug: '{{target}}-{{url}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Nome', name: 'nme_param', widget: 'string' }
+      - { label: 'Url', name: 'uri_param', widget: 'string' }
